@@ -1,6 +1,6 @@
 import { generateReturnsArray } from "./src/investmentGoals";
 import { Chart } from "chart.js/auto";
-// import { createTable } from "./src/table";
+import { createTable } from "./src/table.js";
 
 const finalMoneyChart = document.getElementById("final-money-distribution");
 const progressionChart = document.getElementById("progression");
@@ -231,6 +231,6 @@ previousButton.addEventListener("click", () => {
     carouselEl.scrollLeft -= mainEl.clientWidth;
 });
 
-// form.addEventListener("submit", renderProgression);
+form.addEventListener("submit", renderProgression);
 // calculateButton.addEventListener('click', renderProgression);
 clearFormButton.addEventListener("click", clearForm);
