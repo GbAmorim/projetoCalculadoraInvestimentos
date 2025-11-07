@@ -166,19 +166,28 @@ function resetCharts() {
 }
 
 function clearForm() {
+    // Limpa todos os campos
     form["starting-amount"].value = "";
     form["additional-contribution"].value = "";
     form["time-amount"].value = "";
     form["return-rate"].value = "";
     form["tax-rate"].value = "";
 
+    // Remove gráficos
     resetCharts();
 
+    // Remove mensagens de erro
     const errorInputContainers = document.querySelectorAll(".error");
-
     for (const errorInputContainer of errorInputContainers) {
         errorInputContainer.classList.remove("error");
-        errorInputContainer.parentElement.querySelector("p").remove();
+        const errorMsg = errorInputContainer.parentElement.querySelector("p");
+        if (errorMsg) errorMsg.remove();
+    }
+
+    //limpa tabela de resultados
+    const resultsTable = document.getElementById("results-table");
+    if (resultsTable) {
+        resultsTable.innerHTML = ""; // remove thead e tbody
     }
 }
 
