@@ -12,7 +12,7 @@ Este projeto consiste em uma **calculadora de investimentos** desenvolvida em Ja
 ## Estrutura do Código
 
 - `index.html`: Contém a estrutura principal da página, inputs do usuário e containers para a tabela e gráficos.
-- `style.css`: Estilização da calculadora, tabela e gráficos.
+- `tailwind`: Estilização da calculadora, tabela e gráficos.
 - `script.js`: Lógica principal da calculadora, incluindo:
   - Cálculo dos valores de investimento mês a mês.
   - Criação dinâmica da tabela de resultados.
@@ -21,7 +21,7 @@ Este projeto consiste em uma **calculadora de investimentos** desenvolvida em Ja
 ## Tecnologias Utilizadas
 
 - **HTML5**
-- - **Tailwind**
+- **Tailwind**
 - **JavaScript (ES6+)**
 - **Chart.js** para os gráficos interativos
 
@@ -39,5 +39,6 @@ Este projeto é útil para quem deseja **simular diferentes cenários de investi
 ---
 
 Desenvolvido como projeto de estudo para aprimorar habilidades em **JavaScript, manipulação de DOM e visualização de dados**.
+
 
 
